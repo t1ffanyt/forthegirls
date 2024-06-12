@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FTP and WPK Calculator for Women Cyclists</title>
+    <title>Watts Per Kilogram for Women Cyclists</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Women's Cycling FTP and WPK Calculator</h1>
+        <h1>Welcome to the Women's Cycling Watts Per Kilogram Calculator</h1>
     </header>
     <main>
         <section id="calculator">
-            <h2>Calculate Your FTP and WPK</h2>
+            <h2>Calculate Your Watts Per Kilogram</h2>
             <form id="calcForm">
+                <label class="power_example"> <em>FTP = 95% of your best average 20 minute power</em></label>
+                <label class="power_example"> <em>Example: .95 x best avg 20 minute power = .95 x 200 = 190 watts</em></label>
                 <label for="power">Enter your FTP (Watts):</label>
                 <input type="number" id="power" name="power" required>
                 <label for="weight">Enter your weight (kg):</label>
                 <input type="number" id="weight" name="weight" required>
-                <button type="button" onclick="calculateWPK()">Calculate</button>
+                <button type="button" onclick="calculateWPKG();">Calculate</button>
             </form>
             <div id="results">
-                <p id="ftpResult"></p>
                 <p id="wpkResult"></p>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Women's Cycling FTP and WPK Calculator</p>
+        <p>&copy; 2024 Women's Cycling WPKG Calculator</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="./utility/calculateWPKG.js"></script>
 </body>
 </html>

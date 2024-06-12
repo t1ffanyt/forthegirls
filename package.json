@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "",
   "scripts": {
-    "test": "exit 0",
+    "test": "jest ./tests",
     "build": "exit 0"
   },
   "author": "",
@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "firebase": "^10.12.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

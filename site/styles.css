@@ -10,6 +10,11 @@ body {
     align-items: center;
 }
 
+.power_example {
+    font-size: .5em;
+
+}
+
 header, footer {
     background-color: #FF6F61;
     color: white;
