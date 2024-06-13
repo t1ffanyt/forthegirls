@@ -15,12 +15,20 @@ body {
 
 }
 
-header, footer {
+header {
     background-color: #FF6F61;
     color: white;
     text-align: center;
     width: 100%;
     padding: 1em 0;
+}
+footer {
+    background-color: #FF6F61;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+
 }
 
 h1, h2 {
