@@ -1,34 +1,35 @@
-/* General Styles */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #FAFAFA;
     color: #333;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .power_example {
     font-size: .7em;
-
 }
+
 
 header {
     background-color: #FF6F61;
     color: white;
     text-align: center;
+    height: 20vh;
     width: 100%;
-    padding: 1em 0;
 }
 footer {
     background-color: #FF6F61;
     color: white;
     text-align: center;
+    height: 20vh;
     width: 100%;
-    padding: 1em 0;
-
 }
 
 h1, h2 {
@@ -40,10 +41,10 @@ main {
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    margin: 20px 0;
+    padding: 2%;
+    width: 100%;
+    max-width: 500px;
+    margin: 2%;
 }
 
 label, input {
@@ -57,6 +58,8 @@ input {
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1em;
+    width: calc(100% - 30px);
+
 }
 
 button {
@@ -81,11 +84,4 @@ button:hover {
 p {
     font-size: 1.2em;
     color: #555;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    main {
-        padding: 15px;
-    }
 }

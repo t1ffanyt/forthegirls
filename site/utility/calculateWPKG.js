@@ -1,14 +1,9 @@
 
 function calculateWPKG() {
-    console.log("Button clicked - calculateWPKG()");
     const power = document.getElementById('power').value;
     const pounds = document.getElementById('weight').value;
 
     kilograms = convertPoundsToKilograms(pounds);
-
-
-    console.log("Power:", power);
-    console.log("Weight in kg:", kilograms);
 
     if (power && kilograms) {
         const ftp = power;
@@ -22,7 +17,6 @@ function calculateWPKG() {
 }
 
 function convertPoundsToKilograms(pounds){
-    console.log("Weight in lbs: ", pounds);
 
     if (pounds) {
         const kg = (pounds / 2.2046).toFixed(2);
