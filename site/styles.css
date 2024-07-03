@@ -1,3 +1,66 @@
+#relative-position{
+  position: relative;
+}
+
+/*
+#slider{
+    position: absolute;
+    height: 7%;
+    margin: 0;
+    border: 0;
+    visibility: hidden;
+}
+*/
+
+.ioFaNX{
+    position: absolute;
+    border-radius: 5px;
+    left: 63%;
+    top: 355px;
+}
+
+.jjmSMm{
+    display: flex;
+    align-items: stretch;
+    border: 4px solid rgb(233, 233, 233);
+}
+
+/*
+#kilo-or-pounds-slider {
+    height: 10%;
+    width: 12%;
+    color: #FF6F61;
+    border: 4px solid #FF6F61;
+    border-radius: 5px;
+    position: relative;
+    top: 5vh;
+}
+
+
+label[for="slider"] {
+    height: 5px;
+    width: 5px;
+    background-color: #FF6F61;
+    position: relative;
+
+    /*
+
+    background-color: #FF6F61;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: -42px;
+    left: 2px;
+}
+
+/*
+kilo-or-pounds-slider:checked + label[for="slider"] {
+    transform: translateX(28px);
+
+}
+*/
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -10,12 +73,12 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .power_example {
     font-size: .7em;
 }
-
 
 header {
     background-color: #FF6F61;
@@ -44,7 +107,12 @@ main {
     padding: 2%;
     width: 100%;
     max-width: 500px;
-    margin: 2%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+
 }
 
 label, input {
