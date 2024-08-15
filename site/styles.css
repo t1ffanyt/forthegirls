@@ -1,66 +1,34 @@
-#relative-position{
-  position: relative;
+
+.button-placement{
+    position: absolute;
+    min-width: 40px;
+    right: 29px;
+    top: 13px;
 }
 
-/*
-#slider{
-    position: absolute;
-    height: 7%;
-    margin: 0;
-    border: 0;
-    visibility: hidden;
-}
-*/
-
-.ioFaNX{
-    position: absolute;
+.button-format{
     border-radius: 5px;
-    left: 63%;
-    top: 355px;
-}
-
-.jjmSMm{
     display: flex;
-    align-items: stretch;
-    border: 4px solid rgb(233, 233, 233);
+    border: 3px solid #FF6F61;
+    background: white;;
+    height: 15px;
+    align-items: center;
 }
 
-/*
-#kilo-or-pounds-slider {
-    height: 10%;
-    width: 12%;
+#lb-radio:checked + label{
+    color: black;
+}
+
+#kg-radio:checked + label{
+    color: black;
+}
+
+#kg-radio:not(:checked) + label{
     color: #FF6F61;
-    border: 4px solid #FF6F61;
-    border-radius: 5px;
-    position: relative;
-    top: 5vh;
 }
-
-
-label[for="slider"] {
-    height: 5px;
-    width: 5px;
-    background-color: #FF6F61;
-    position: relative;
-
-    /*
-
-    background-color: #FF6F61;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    position: relative;
-    top: -42px;
-    left: 2px;
+#lb-radio:not(:checked) + label{
+    color: #FF6F61;
 }
-
-/*
-kilo-or-pounds-slider:checked + label[for="slider"] {
-    transform: translateX(28px);
-
-}
-*/
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -73,7 +41,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 .power_example {
@@ -84,16 +51,17 @@ header {
     background-color: #FF6F61;
     color: white;
     text-align: center;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
 }
 footer {
     background-color: #FF6F61;
     color: white;
     text-align: center;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
 }
+
 
 h1, h2 {
     margin: 0.5em 0;
@@ -106,11 +74,11 @@ main {
     border-radius: 10px;
     padding: 2%;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     margin: 5%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
     justify-content: center;
 
 }
@@ -121,13 +89,40 @@ label, input {
     margin: 10px 0;
 }
 
+
+
+label.lb-radio-label{
+    color: #FF6F61;               
+}
+
+label.kg-radio-label{
+    color: #FF6F61;
+}
+
 input {
     padding: 10px;
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1em;
-    width: calc(100% - 30px);
+    height: 20px;
+}
 
+.label.lb-radio-label{
+    color: white;
+}
+
+.label.kg-radio-label{
+    color: white;
+}
+
+#lb-radio {
+    width: 0px;
+    opacity: 0;
+}
+
+#kg-radio{
+    width: 0px;
+    opacity: 0;
 }
 
 button {
@@ -147,9 +142,23 @@ button:hover {
 
 #results {
     margin-top: 20px;
+    color: black;
 }
 
 p {
     font-size: 1.2em;
     color: #555;
+}
+
+.position--relative {
+    position: relative !important;
+    display: flex;
+}
+
+#weight_input_box{
+    width: 400px;
+}
+
+#power_input_box{
+    width: 400px;
 }
