@@ -25,11 +25,27 @@
             <form id="calcForm">
                 <label class="power_example"> <em>FTP = 95% of your best average 20 minute power</em></label>
                 <label class="power_example"> <em>Example: .95 x best avg 20 minute power = .95 x 200 = 190 watts</em></label>
+                <div class="ftp_label_and_input"> 
                 <label for="power">Enter your FTP (watts):</label>
-                <input type="number" id="power" name="power" required>
-                <label for="weight">Enter your weight (lbs):</label>
-                <input type="number" id="weight" name="weight" required>
-                <button type="button" onclick="calculateWPKG();">Calculate</button>
+                <input type="number" id="power_input_box" name="power" required>
+                </div>
+                <div class="weight_label_and_input"> 
+                    <label for="weight">Enter your weight:</label>
+                    <div class="position--relative">
+                    <div class=""></div>
+                    <input type="text" id="weight_input_box" name="weight" required>
+                    <fieldset role="group" class="fieldset-group button-format button-placement">
+                        <input id="lb-radio" aria-label="Weight in Pounds" type="radio" class="ItemInput-sc-yxuu9q-0 cDlqlw" name="radio_button_lb_kg" checked>
+                        <label for="lb-radio" class="lb-radio-label lb-radio-art">lb</label>
+                        <span class="lb-slider"></span>
+                        <input id="kg-radio" aria-label="Weight in Kilograms" type="radio" class="ItemInput-sc-yxuu9q-0 cDlqlw" name="radio_button_lb_kg" checked>
+                        <label for="kg-radio" class="kg-radio-label kg-radio-art">kg</label>
+                        <span class="kg-slider"></span>
+                    </fieldset>
+                    </div>
+                </div>
+                
+                <button type="button" onclick="calculateWPKG();">Calculate</button>         
             </form>
             <div id="results">
                 <p id="wpkResult"></p>
@@ -42,3 +58,7 @@
     <script src="./utility/calculateWPKG.js"></script>
 </body>
 </html>
+
+
+
+

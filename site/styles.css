@@ -1,4 +1,35 @@
 
+.button-placement{
+    position: absolute;
+    min-width: 40px;
+    right: 29px;
+    top: 13px;
+}
+
+.button-format{
+    border-radius: 5px;
+    display: flex;
+    border: 3px solid #FF6F61;
+    background: white;;
+    height: 15px;
+    align-items: center;
+}
+
+#lb-radio:checked + label{
+    color: black;
+}
+
+#kg-radio:checked + label{
+    color: black;
+}
+
+#kg-radio:not(:checked) + label{
+    color: #FF6F61;
+}
+#lb-radio:not(:checked) + label{
+    color: #FF6F61;
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #FAFAFA;
@@ -16,21 +47,21 @@ body {
     font-size: .7em;
 }
 
-
 header {
     background-color: #FF6F61;
     color: white;
     text-align: center;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
 }
 footer {
     background-color: #FF6F61;
     color: white;
     text-align: center;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
 }
+
 
 h1, h2 {
     margin: 0.5em 0;
@@ -43,8 +74,13 @@ main {
     border-radius: 10px;
     padding: 2%;
     width: 100%;
-    max-width: 500px;
-    margin: 2%;
+    max-width: 450px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+
 }
 
 label, input {
@@ -53,13 +89,40 @@ label, input {
     margin: 10px 0;
 }
 
+
+
+label.lb-radio-label{
+    color: #FF6F61;               
+}
+
+label.kg-radio-label{
+    color: #FF6F61;
+}
+
 input {
     padding: 10px;
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1em;
-    width: calc(100% - 30px);
+    height: 20px;
+}
 
+.label.lb-radio-label{
+    color: white;
+}
+
+.label.kg-radio-label{
+    color: white;
+}
+
+#lb-radio {
+    width: 0px;
+    opacity: 0;
+}
+
+#kg-radio{
+    width: 0px;
+    opacity: 0;
 }
 
 button {
@@ -79,9 +142,23 @@ button:hover {
 
 #results {
     margin-top: 20px;
+    color: black;
 }
 
 p {
     font-size: 1.2em;
     color: #555;
+}
+
+.position--relative {
+    position: relative !important;
+    display: flex;
+}
+
+#weight_input_box{
+    width: 400px;
+}
+
+#power_input_box{
+    width: 400px;
 }
