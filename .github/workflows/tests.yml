@@ -13,5 +13,6 @@ jobs:
         with:
           node-version: 20
       - uses: actions/checkout@v2
+      - run: npm install
       - run: npm run test
       
