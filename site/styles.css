@@ -16,18 +16,18 @@
 }
 
 #lb-radio:checked + label{
-    color: black;
+    color: #FF6F61;;
 }
 
 #kg-radio:checked + label{
-    color: black;
+    color: #FF6F61;
 }
 
 #kg-radio:not(:checked) + label{
-    color: #FF6F61;
+    color: black;
 }
 #lb-radio:not(:checked) + label{
-    color: #FF6F61;
+    color: black;
 }
 
 body {
